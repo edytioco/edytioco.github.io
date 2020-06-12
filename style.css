@@ -1,0 +1,164 @@
+/*
+	Notes:
+	- classes are meant to be used many times
+	- id's are meant to be used sparingly. they also override things.
+	
+	least specific >> most specific:
+	tags >> classes >> id's
+	- style elements in this order.
+	
+	!important keyword
+	- attributes with !important will override anything, no matter where it is written
+	- only useful when an element appears one way ALL the time
+	- sign of potential bad coding practice, so don't use it. it's inflexible
+
+*/
+
+html{
+	background-color:	#202225;
+	color:				#bbbbbb;
+}
+
+body{
+	background: 		#080808;
+}
+
+header{
+	display:			flex;
+	align-items:		center;
+	justify-content:	center;
+	height:				144px;
+	margin:				0px;
+	padding:			0px;
+	background-color:	#1e128b;
+	
+	font-family: 		'Consolas', sans-serif;
+}
+
+h1, h2, h3{
+	font-family: 		'Consolas', sans-serif;
+	text-align:			center;
+}
+
+p, table{
+	font-family:		'Arial';
+}
+
+
+
+
+a:link{
+	color:				#dddddd
+}
+
+a:visited{
+	color:				#888888
+}
+
+a:hover{
+	color:				#eeeeee
+}
+
+a:active{
+	color:				#ffffff
+}
+
+.links {
+	font-family: 		'Consolas', sans-serif;
+	text-align:			left;
+}
+.emphasize{
+	font-style:			italic;
+}
+
+
+
+.intro{
+	align-items:		center;
+	text-align:			center;	/*for the paragraph, too*/
+	text-justify:		inter-word;
+}
+/*For the table of contents*/
+.intro table{
+	display:			inline-block;
+	text-align:			left;
+}
+.intro th, td{
+	padding-left:		16px;
+}
+.intro p{
+	text-align:			justify;
+	text-align-last:	center;
+	padding-left:		32%;
+	padding-right:		32%;
+	font-size:			18px;
+}
+
+
+
+.about-me{
+	flex:				1;
+	align-items:		center;
+	text-align:			center;
+	/*justify-content:	center;*/
+}
+.profile-picture {
+	border-radius:		50%;
+}
+
+
+
+
+.wrapper{
+	display:			flex;
+	flex-direction:		row;
+	align-items:		center;
+}
+.left, .right{
+	margin:				8px;
+	width:				50%;
+	flex:				1;
+	display:			flex;
+	flex-direction:		column;
+	justify-content:	center;
+	align-items:		center;
+}
+.right{
+	text-align:			justify;
+	text-align-last:	center;
+}
+.right p{
+	padding-left:		10%;
+	padding-right:		10%;
+	font-size:			18px;
+}
+.center{
+	flex:				1;
+	align-items:		center;
+}
+img.center{
+	display:			block;
+	margin-left:		auto;
+	margin-right:		auto;
+}
+.justify{
+	text-justify:		inter-word;
+}
+iframe{
+	border:				none;
+	margin-left:		4px;
+	margin-right:		4px;
+}
+
+
+
+
+footer{
+	align-items:		center;
+	justify-content:	center;
+	text-align:			center;
+	background-color:	#101010;
+}
+ul{
+	list-style-type:	none;
+}
