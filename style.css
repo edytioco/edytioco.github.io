@@ -76,13 +76,13 @@
 /*this in particular is a rule set for html*/
 html{
 	/*these are properties (left) and values (right)*/
-	background-color:	#32353B;	/*discord dark gray*/
-	color:				#32353B;
+	background-color:	#2D2F32;	/*discord dark gray*/
+	color:				#DCDDDE;	/*discord light gray for text*/
 }
 
 /*the selector here is "body". selectors are like the function signatures in C++*/
 body{
-	background: 		#32353B;
+	background: 		#101010;	/*background for the body of the page*/
 }
 
 header{
@@ -93,6 +93,7 @@ header{
 	margin:				0px;
 	padding:			0px;
 	background-color:	#202225;	/*discord darker gray*/
+	background:			#202225;
 	
 	font-family: 		'Consolas', sans-serif;
 }
@@ -223,7 +224,7 @@ footer{
 	align-items:		center;
 	justify-content:	center;
 	text-align:			center;
-	background-color:	#101010;
+	background-color:	#080808;
 }
 ul{
 	list-style-type:	none;
