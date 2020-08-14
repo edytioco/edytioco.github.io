@@ -14,13 +14,75 @@
 
 */
 
-html{
-	background-color:	#202225;
-	color:				#bbbbbb;
+/*
+	Margin vs Padding
+	- margin creates a space outside the element's borders
+		- top and bottom margins can collapse
+		- eg.
+			#img-one{
+				margin-bottom:30px;
+			}
+			#img-two{
+				margin-top:20px;
+			}
+			
+			Instead of a 50px space between these, the larger wins out.
+			So, there is a 30px space. This is what collapsing means
+	- padding creates a space inside the element's borders
+		- top and bottom padding does not collapse
+	
+	Padding shortcuts (same for margins):
+	<top> <right> <bottom> <left>
+	padding: 6px 11px 4px 9px;
+	<top and bottom> <left and right>
+	padding: 5px 10px;
+	
+	
+	Margin: 0 auto;
+	This does 0 top-bottom margin, and auto automatically centers the element within its container
+		NOTE: the width of this element should be less than the container, or else it won't center with auto.
+		So, set the width with width: <value>
+*/
+
+/*
+	display: none   vs   visibility: hidden
+	- display: none will completely remove an element from the web page
+	- visibility: hidden will not be seen on the web page, BUT:
+		- people can see that it exists inside the source code
+		- there's still space reserved on the page for the element
+		
+	use visibility: hidden if you want to keep the page layout the same,
+	while still hiding whatever you want to hide
+*/
+
+/*
+	Many browsers have default CSS values which can be annoying for a web developer.
+	It's easier to work with a clean slate, as the youngins say
+	
+	This sets the default value for margin and padding to clear browser shenanigans.
+	This rule set is often placed first in the .css file
+	
+	margin and padding are the most common to have here,
+	but you can also force a default state for font-family, textareas, etc. if needed
+*/
+* {
+	margin:				0;
+	padding:			0;
 }
 
+
+
+/*this is called a rule set.*/
+/*this in particular is a rule set for html*/
+html{
+	/*these are properties (left) and values (right)*/
+	background-color:	#32353B;	/*discord dark gray*/
+	color:				#32353B;
+}
+
+/*the selector here is "body". selectors are like the function signatures in C++*/
 body{
-	background: 		#080808;
+	background: 		#32353B;
 }
 
 header{
@@ -30,7 +92,7 @@ header{
 	height:				144px;
 	margin:				0px;
 	padding:			0px;
-	background-color:	#1e128b;
+	background-color:	#202225;	/*discord darker gray*/
 	
 	font-family: 		'Consolas', sans-serif;
 }
@@ -38,6 +100,10 @@ header{
 h1, h2, h3{
 	font-family: 		'Consolas', sans-serif;
 	text-align:			center;
+	
+	/*
+		text-align aligns the text to the parent element that holds it.
+	*/
 }
 
 p, table{
